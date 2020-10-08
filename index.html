@@ -4,10 +4,8 @@
 <html lang="ru">
 	<!-- Заголовок страниц, контейнер длыя других важных даных (не отображается) -->
 	<head>
-		<!-- Favicon -->
-		 <link rel="shortcut icon" href="img/header/Logo.png" type="image/x-icon">
 		<!-- Заголовок страний в браузере -->
-		<title>Bike AOD</title>
+		<title>Tutorial</title>
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/style.css"/>
 		<!-- Кодировка страницы -->
@@ -55,7 +53,7 @@
 		<!-- ссылка на изображение, которое будет публиковаться в записи -->
 		<meta property="og:image" content="img/header/Layer_7.jpg">
 		<!-- ссылка на текущую страницу -->
-<!-- 		<meta property="og:url" content="http://fls.guru/meta/ "> -->
+		<meta property="og:url" content="http://fls.guru/meta/ ">
 		<!-- название сайта -->
 		<meta property="og:site_name" content="AOD">
 
@@ -225,7 +223,7 @@
 				</div>
 				<div class="shop__footer">
 					<div class="shop__button">
-						<button>DISCOVER THE SHOP</button>
+						<a href="#">DISCOVER THE SHOP</a>
 					</div>
 				</div>				
 			</div>		
@@ -235,9 +233,10 @@
 						<img src="img/header/Logo.png" alt="">
 					</div>
 					<div class="maling__subtitle subtitle"><p>Stay on the saddle!</p></div>
-					<form class="maling__form form">
+					<form autocomplete="on" class="maling__form form">
 						<div class="form__row">
-							<div class="form__email" ><input type="text" placeholder="enter your email... "></div>
+							<div class="form__email" ><input type="email"  id="email"
+       multiple type="text" required placeholder="enter your email... "></div>
 							<div class="form__button"><button>GO</button></div>
 						</div>
 					</form>
