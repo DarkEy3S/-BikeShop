@@ -16,8 +16,8 @@
 /*---------------------------*/
 
 body {
-	color: #4d4959;	
 }
+
 
 .wrapper {
 }
@@ -47,6 +47,9 @@ body {
 		}
 		&_img {
 			flex: 0 1 15%;
+			@media (max-width: 1000px) {
+				margin: 0 5px;
+			}
 		}
 		text-align: center;
 		font-size: 13px;
@@ -229,7 +232,7 @@ body {
 		margin: auto auto 27px;
 		span {
 			color: #848789;
-			font-family: "Lato Light";
+			font-family: Lato;
 			font-weight: 300;
 			letter-spacing: 1.8px;
 		}
@@ -244,6 +247,7 @@ body {
 	line-height: 34px;
 }
 .shop {
+	background-color: #F7F7F7;
 	&__row {
 		display: flex;
 			@media (max-width: 1000px) {
@@ -261,29 +265,46 @@ body {
 				width: 100%;				
 			}
 		}
-		&_1 {
+		&_1 {	
+			flex: 1 1 33.3334%;
 			@media (max-width: 1000px) {
-				flex-direction:row;
-			}		
-			flex: 1 0 33.3334%;
+				width: 0px;
+				height: 0px;
+			}				
 		}
 		&_2 {
-			flex: 1 0 16.6667%;
+			flex: 1 1 16.6667%;
+			@media (max-width: 1000px) {
+				width: 0px;
+				height: 0px;
+			}		
 		}
 		&_3 {
-			flex: 1 0 16.6667%;
+			flex: 1 1 16.6667%;
+			@media (max-width: 1000px) {
+				width: 0px;
+				 height: 0px;
+			}		
 		}
 		&_4 {
-			flex: 1 0 33.3334%;
+			flex: 1 1 33.3334%; 
 		}				
 		&_left {
 			flex: 1 1 auto;	
+			@media (max-width: 1000px) {
+				width: 0px;
+				 height: 0px;
+			}					
 		}			
 		&_right {		
 		flex: 1 1 auto;	
 		}
 		&_down {
 			flex: 1 1 auto;
+			@media (max-width: 1000px) {
+				width: 0px;
+				 height: 0px;
+			}		
 		}
 		&_up {
 			flex: 1 1 auto;
@@ -375,6 +396,7 @@ body {
 	&__button {
 		@media (max-width: 1000px) {
 			margin: 20px auto 0;
+			padding: 0;
 		}		
 		padding: 0 8px;
 		button{
@@ -426,14 +448,26 @@ body {
 		}
 	}
 	&__social {
+		display: flex;
+			@media (max-width: 1000px) {
+				flex-direction: column;
+				padding: 0 20px 0 0;
+				margin: -15px 0 0 0;				
+			}
 		img {
 			margin: 0 15px;
+			@media (max-width: 1000px) {
+				padding: 0 0 10px 10px;
+			}
 		}
 	}
 	&__author {
 		height: 36px;
 		img {
-			display: inline;
+			display: inline-block;
+			@media (max-width: 1000px) {
+				padding: 0 10px;
+			}
 		}
 		p {
 			margin: auto 9px;
